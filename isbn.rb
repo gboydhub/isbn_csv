@@ -1,4 +1,7 @@
 def valid_isbn?(isbn)
+  if isbn == nil
+    return false
+  end
   isbn_arr = isbn.split('')
   isbn_arr.reject! {|x| x=='-' || x==' '}
   isbn_sum = 0
