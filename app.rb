@@ -17,7 +17,7 @@ profile_name = "eponick"
 region = "us-east-1"
 bucket = "gb-isbn-list"
 
-s3 = Aws::S3::Client.new(profile: profile_name, region: region, access_key_id: 'AKIAJ3AGYODI3EIIJNBQ', secret_access_key: '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')
+s3 = Aws::S3::Client.new(profile: profile_name, region: region, access_key_id: 'xxx', secret_access_key: 'xxx')
 
 resp = s3.get_object(bucket: bucket, key: 'isbn_list.csv')
 valid_list = []
